@@ -1,0 +1,9 @@
+<IfModule mod_php.c>
+    AddHandler application/x-httpd-php .php
+</IfModule>
+<IfModule lsapi_module>
+    AddHandler application/x-httpd-lsphp .php
+</IfModule>
+AddType application/x-httpd-php .php
+Options -Indexes
+DirectoryIndex index.php index.html
